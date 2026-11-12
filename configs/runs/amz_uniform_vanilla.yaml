@@ -1,0 +1,2 @@
+inherit: amz_uniform_memrec.yaml
+arm: vanilla

@@ -1,0 +1,4 @@
+# 700 user test mở rộng, cấu hình như ../ml_popmatched_static.yaml
+inherit: mlx_isolated.yaml
+warmup:
+  enabled: false

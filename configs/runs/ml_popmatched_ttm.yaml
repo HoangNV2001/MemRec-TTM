@@ -1,0 +1,12 @@
+# MemRec-TTM đầy đủ: C2 (item quỹ đạo trong Stage-R) + C3 (bằng chứng next-step trong ReRank)
+inherit: ml_popmatched_memrec.yaml
+arm: ttm
+memrec:
+  ttm:
+    enabled: true
+    mode: ppr
+    m: 6
+    restart: 0.15
+    k_traj: 4
+    read: true
+    rerank_evidence: true

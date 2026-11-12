@@ -1,0 +1,4 @@
+# Chẩn đoán: MemRec-TTM nhưng không warm-up (memory = metadata ban đầu, không có ghi Stage-W)
+inherit: amz_popmatched_ttm_evid_recent.yaml
+warmup:
+  enabled: false

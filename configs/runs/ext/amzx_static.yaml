@@ -1,0 +1,4 @@
+# 700 user test mở rộng, cấu hình như ../amz_popmatched_static.yaml
+inherit: amzx_isolated.yaml
+warmup:
+  enabled: false

@@ -1,0 +1,8 @@
+# MemRec gốc trên temporal-amazon-books, negative uniform
+inherit: base_gemini.yaml
+arm: memrec
+dataset: temporal-amazon-books
+data_dir: data/processed/temporal-amazon-books
+cohort: data/cohorts/temporal-amazon-books_uniform_t300_v100.json
+domain_rules: instructrec-books
+use_instruction: false

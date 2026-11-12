@@ -1,0 +1,4 @@
+# 700 user test mở rộng, cấu hình như ../ml_popmatched_isolated.yaml
+inherit: mlx_memrec.yaml
+memrec:
+  isolated: true

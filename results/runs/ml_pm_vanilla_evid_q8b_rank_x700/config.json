@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "cache_path": "results/cache/qwen3-8b-x700-ml.sqlite",
+  "max_physical_calls": 12000,
+  "workers": 32,
+  "warmup": {
+    "enabled": true
+  },
+  "splits": [
+    "test"
+  ],
+  "memrec": {
+    "k": 16,
+    "tau_tokens": 1800,
+    "mix_min_users": 4,
+    "mix_min_items": 6,
+    "n_facets": 7,
+    "temperature": 0.0,
+    "max_tokens": 4000,
+    "pruner": {
+      "mode": "llm_rules"
+    },
+    "write": {
+      "fanout_cap": 8
+    },
+    "vanilla_history_len": 10,
+    "ttm": {
+      "enabled": true,
+      "mode": "ppr",
+      "m": 6,
+      "restart": 0.15,
+      "read": false,
+      "rerank_evidence": true
+    },
+    "rerank_output": "ranking"
+  },
+  "arm": "vanilla",
+  "dataset": "temporal-ml32m-ext",
+  "data_dir": "data/processed/temporal-ml32m-ext",
+  "cohort": "data/cohorts/temporal-ml32m-ext_popmatched_t700_v0.json",
+  "domain_rules": "instructrec-movietv",
+  "use_instruction": false,
+  "provider": {
+    "name": "local",
+    "model": "Qwen3-8B",
+    "extra_body": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  }
+}

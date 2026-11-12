@@ -1,0 +1,42 @@
+{
+ "metrics": {
+  "test": {
+   "n": 0,
+   "Hit@1": NaN,
+   "NDCG@1": NaN,
+   "Hit@3": NaN,
+   "NDCG@3": NaN,
+   "Hit@5": NaN,
+   "NDCG@5": NaN,
+   "Hit@10": NaN,
+   "NDCG@10": NaN,
+   "MRR": NaN
+  },
+  "val": {
+   "n": 300,
+   "Hit@1": 0.11333333333333333,
+   "NDCG@1": 0.11333333333333333,
+   "Hit@3": 0.36666666666666664,
+   "NDCG@3": 0.2583301655000041,
+   "Hit@5": 0.55,
+   "NDCG@5": 0.3330512385657038,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.47583507607363157,
+   "MRR": 0.31942063492063494
+  }
+ },
+ "best_val_ndcg5": 0.3330512385657038,
+ "args": {
+  "config": "configs/runs/amzv2_vanilla_evid.yaml",
+  "prefix": "amzv2_full",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 30,
+  "patience": 3,
+  "batch": 512,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 500,
+  "device": "cuda"
+ }
+}

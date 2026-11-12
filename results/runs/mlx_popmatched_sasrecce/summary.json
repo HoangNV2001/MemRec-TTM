@@ -1,0 +1,33 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.38,
+   "NDCG@1": 0.38,
+   "Hit@3": 0.6414285714285715,
+   "NDCG@3": 0.5296055787295961,
+   "Hit@5": 0.7785714285714286,
+   "NDCG@5": 0.5861029727162429,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.6571017030431687,
+   "MRR": 0.5515130385487528
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "best_epoch": 4,
+ "args": {
+  "config": "configs/runs/ext/mlx_memrec.yaml",
+  "prefix": "mlx_popmatched",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 4,
+  "patience": 3,
+  "batch": 128,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 0,
+  "device": "cuda",
+  "loss": "ce",
+  "tag": "sasrecce"
+ }
+}

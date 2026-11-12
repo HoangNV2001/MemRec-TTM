@@ -1,0 +1,4 @@
+# Chẩn đoán: không facet và không warm-up (item memory = metadata ban đầu) — tách tác dụng của ghi memory
+inherit: ml_popmatched_ttm_nofacet.yaml
+warmup:
+  enabled: false

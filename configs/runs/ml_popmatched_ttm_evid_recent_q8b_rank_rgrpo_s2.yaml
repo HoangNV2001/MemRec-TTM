@@ -1,0 +1,3 @@
+# Seed 2: LLM_Rec = adapter LoRA "rgrpo_s2" (Rank-GRPO dừng sớm là hành động, --seed 7, checkpoint chọn trên val)
+inherit: ml_popmatched_ttm_evid_recent_q8b_rank.yaml
+rerank_model: rgrpo_s2

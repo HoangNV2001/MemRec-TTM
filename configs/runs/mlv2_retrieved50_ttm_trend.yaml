@@ -1,0 +1,6 @@
+# E2-val: MemRec-TTM + bằng chứng xu hướng (độ phổ biến 90 ngày)
+inherit: mlv2_retrieved50_ttm.yaml
+memrec:
+  ttm:
+    trend_evidence: true
+    trend_window: 90

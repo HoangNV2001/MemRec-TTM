@@ -1,0 +1,5 @@
+# MemRec-TTM đầy đủ: C0 (10 item gần nhất trong ReRank) + C2 + C3
+inherit: ml_uniform_ttm.yaml
+memrec:
+  ttm:
+    recent_k: 10

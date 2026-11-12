@@ -1,0 +1,8 @@
+# Mở rộng test lên 1.000 user (07/11), Qwen3-8B; cache riêng mỗi dataset để hai GPU không ghi chung một SQLite
+inherit: ../ml_popmatched_vanilla_evid_q8b_rank_rgrpo.yaml
+dataset: temporal-ml32m-ext
+data_dir: data/processed/temporal-ml32m-ext
+cohort: data/cohorts/temporal-ml32m-ext_popmatched_t700_v0.json
+splits: [test]
+max_physical_calls: 12000
+cache_path: results/cache/qwen3-8b-x700-ml.sqlite

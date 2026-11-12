@@ -1,0 +1,7 @@
+# MemRec gốc trên InstructRec Books (candidate gốc của iAgent)
+inherit: base_gemini.yaml
+arm: memrec
+dataset: instructrec-books
+data_dir: data/processed/instructrec-books
+cohort: data/cohorts/instructrec-books_t300_v100.json
+use_instruction: true

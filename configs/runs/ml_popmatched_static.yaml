@@ -1,0 +1,5 @@
+# Đại diện nhóm "bộ nhớ tĩnh" (kiểu iAgent, không có chỉ dẫn): như bộ nhớ riêng lẻ nhưng không có warm-up, nên bộ nhớ
+# không được cập nhật; Stage-R tóm tắt hồ sơ từ các item của chính user tại lượt xếp hạng
+inherit: ml_popmatched_isolated.yaml
+warmup:
+  enabled: false

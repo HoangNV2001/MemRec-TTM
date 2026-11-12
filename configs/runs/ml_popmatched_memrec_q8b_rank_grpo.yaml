@@ -1,0 +1,4 @@
+# R5: bộ nhớ MemRec gốc, LLM_Rec = adapter LoRA "grpo_run1" (học trên prompt TTM: kiểm tra chuyển giao sang prompt MemRec)
+# Tên adapter là một phần khoá cache: checkpoint khác thì đặt tên khác
+inherit: ml_popmatched_memrec_q8b_rank.yaml
+rerank_model: grpo_run1

@@ -1,0 +1,3 @@
+# Ablation 20 candidate: cùng user/target/warm-up với popmatched, thêm 10 negative cùng bin phổ biến
+inherit: ml_popmatched_ttm_evid_recent.yaml
+cohort: data/cohorts/temporal-ml32m_popmatched20_t300_v100.json

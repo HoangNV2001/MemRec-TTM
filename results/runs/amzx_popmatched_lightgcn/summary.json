@@ -1,0 +1,35 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.34714285714285714,
+   "NDCG@1": 0.34714285714285714,
+   "Hit@3": 0.6042857142857143,
+   "NDCG@3": 0.4932962811938814,
+   "Hit@5": 0.7528571428571429,
+   "NDCG@5": 0.5539018233286456,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.6338787461427523,
+   "MRR": 0.521562925170068
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "best_epoch": 15,
+ "val_log": [],
+ "args": {
+  "config": "configs/runs/ext/amzx_memrec.yaml",
+  "prefix": "amzx_popmatched",
+  "dim": 64,
+  "layers": 3,
+  "epochs": 15,
+  "eval_every": 5,
+  "patience": 4,
+  "batch": 8192,
+  "lr": 0.002,
+  "reg": 0.0001,
+  "seed": 42,
+  "device": "cuda",
+  "threads": 8,
+  "max_batches": 0
+ }
+}

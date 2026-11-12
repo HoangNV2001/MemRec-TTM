@@ -1,0 +1,5 @@
+# Đại diện nhóm "bộ nhớ động riêng lẻ" (kiểu AgentCF, i²Agent) trong khung MemRec: neighbor chỉ gồm item của chính user
+# (không có user đồng tương tác), Stage-W chỉ cập nhật bộ nhớ của user và của item được chọn, không lan truyền
+inherit: amz_popmatched_memrec.yaml
+memrec:
+  isolated: true

@@ -1,0 +1,8 @@
+# MemRec gốc trên temporal-ml32m, negative uniform
+inherit: base_gemini.yaml
+arm: memrec
+dataset: temporal-ml32m
+data_dir: data/processed/temporal-ml32m
+cohort: data/cohorts/temporal-ml32m_uniform_t300_v100.json
+domain_rules: instructrec-movietv
+use_instruction: false

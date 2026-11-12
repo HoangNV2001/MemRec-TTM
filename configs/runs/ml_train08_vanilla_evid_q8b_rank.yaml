@@ -1,0 +1,7 @@
+# Thế giới huấn luyện (mốc cắt 0,8, nhãn trước mốc test 0,9): sinh prompt huấn luyện RL bằng Qwen3-8B
+inherit: ml_popmatched_vanilla_evid_q8b_rank.yaml
+dataset: temporal-ml32m-train08
+data_dir: data/processed/temporal-ml32m-train08
+cohort: data/cohorts/temporal-ml32m-train08_popmatched_t2000_v200.json
+splits: [train, val]
+max_physical_calls: 20000

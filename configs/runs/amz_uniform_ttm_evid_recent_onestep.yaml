@@ -1,0 +1,5 @@
+# Ablation: MemRec-TTM với bằng chứng one-step thay vì PPR nhiều bước
+inherit: amz_uniform_ttm_evid_recent.yaml
+memrec:
+  ttm:
+    mode: onestep

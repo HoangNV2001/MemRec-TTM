@@ -1,0 +1,4 @@
+# E2-val: val2 ML, ứng viên = top-50 của giai đoạn truy xuất; MemRec-TTM
+inherit: mlv2_ttm_evid_recent.yaml
+cohort: data/cohorts/temporal-ml32m-val2_retrieved50_t0_v300.json
+eval_max_tokens: 8000

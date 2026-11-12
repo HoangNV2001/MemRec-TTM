@@ -1,0 +1,7 @@
+# Mở rộng test lên 1.000 user (07/11): 700 user tiếp theo trong hoán vị seed 42, sau val2, bỏ user của thế giới RL
+inherit: ../ml_popmatched_memrec.yaml
+dataset: temporal-ml32m-ext
+data_dir: data/processed/temporal-ml32m-ext
+cohort: data/cohorts/temporal-ml32m-ext_popmatched_t700_v0.json
+splits: [test]
+max_physical_calls: 6000

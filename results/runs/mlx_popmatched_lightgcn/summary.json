@@ -1,0 +1,35 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.38285714285714284,
+   "NDCG@1": 0.38285714285714284,
+   "Hit@3": 0.6928571428571428,
+   "NDCG@3": 0.5625467535306178,
+   "Hit@5": 0.85,
+   "NDCG@5": 0.6271568358120028,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.6761511567550837,
+   "MRR": 0.5739257369614513
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "best_epoch": 35,
+ "val_log": [],
+ "args": {
+  "config": "configs/runs/ext/mlx_memrec.yaml",
+  "prefix": "mlx_popmatched",
+  "dim": 64,
+  "layers": 3,
+  "epochs": 35,
+  "eval_every": 5,
+  "patience": 4,
+  "batch": 8192,
+  "lr": 0.002,
+  "reg": 0.0001,
+  "seed": 42,
+  "device": "cuda",
+  "threads": 8,
+  "max_batches": 0
+ }
+}

@@ -1,0 +1,56 @@
+{
+  "seed": 42,
+  "cache_path": "results/cache/qwen3-8b.sqlite",
+  "max_physical_calls": 20000,
+  "workers": 64,
+  "warmup": {
+    "enabled": true
+  },
+  "splits": [
+    "train",
+    "val"
+  ],
+  "memrec": {
+    "k": 16,
+    "tau_tokens": 1800,
+    "mix_min_users": 4,
+    "mix_min_items": 6,
+    "n_facets": 7,
+    "temperature": 0.0,
+    "max_tokens": 4000,
+    "pruner": {
+      "mode": "llm_rules"
+    },
+    "write": {
+      "fanout_cap": 8
+    },
+    "vanilla_history_len": 10,
+    "ttm": {
+      "enabled": true,
+      "mode": "ppr",
+      "m": 6,
+      "restart": 0.15,
+      "k_traj": 4,
+      "read": false,
+      "rerank_evidence": true,
+      "recent_k": 10
+    },
+    "rerank_output": "ranking"
+  },
+  "arm": "ttm",
+  "dataset": "temporal-amazon-books-train08",
+  "data_dir": "data/processed/temporal-amazon-books-train08",
+  "cohort": "data/cohorts/temporal-amazon-books-train08_popmatched_t2000_v200.json",
+  "domain_rules": "instructrec-books",
+  "use_instruction": false,
+  "log_conversations": "results/runs/amz_train08_ttm_q8b/conversations.jsonl",
+  "provider": {
+    "name": "local",
+    "model": "Qwen3-8B",
+    "extra_body": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  }
+}

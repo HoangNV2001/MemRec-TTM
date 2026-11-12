@@ -1,0 +1,5 @@
+# E3 nguồn truy xuất: MemRec-TTM (C0 + C3) + bằng chứng ngữ nghĩa
+inherit: ml_popmatched_ttm_evid_recent.yaml
+memrec:
+  ttm:
+    semantic_evidence: true

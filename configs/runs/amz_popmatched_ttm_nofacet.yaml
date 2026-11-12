@@ -1,0 +1,4 @@
+# Chẩn đoán: MemRec-TTM nhưng bỏ Stage-R (không facet; còn item memory + C0 + C3)
+inherit: amz_popmatched_ttm_evid_recent.yaml
+memrec:
+  enable_stage_r: false

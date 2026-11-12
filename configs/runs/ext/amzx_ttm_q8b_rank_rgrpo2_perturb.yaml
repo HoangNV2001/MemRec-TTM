@@ -1,0 +1,8 @@
+# Mở rộng test lên 1.000 user (07/11), Qwen3-8B; cache riêng mỗi dataset để hai GPU không ghi chung một SQLite
+inherit: ../amz_popmatched_ttm_evid_recent_q8b_rank_rgrpo2_perturb.yaml
+dataset: temporal-amazon-books-ext
+data_dir: data/processed/temporal-amazon-books-ext
+cohort: data/cohorts/temporal-amazon-books-ext_popmatched_t700_v0.json
+splits: [test]
+max_physical_calls: 12000
+cache_path: results/cache/qwen3-8b-x700-amz.sqlite

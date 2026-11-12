@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "cache_path": "results/cache/gemini-3.5-flash-lite.sqlite",
+  "max_physical_calls": 2500,
+  "workers": 16,
+  "warmup": {
+    "enabled": true
+  },
+  "splits": [
+    "val"
+  ],
+  "memrec": {
+    "k": 16,
+    "tau_tokens": 1800,
+    "mix_min_users": 4,
+    "mix_min_items": 6,
+    "n_facets": 7,
+    "temperature": 0.0,
+    "max_tokens": 4000,
+    "pruner": {
+      "mode": "llm_rules"
+    },
+    "write": {
+      "fanout_cap": 8
+    },
+    "vanilla_history_len": 10,
+    "ttm": {
+      "enabled": true,
+      "mode": "ppr",
+      "m": 6,
+      "restart": 0.15,
+      "read": false,
+      "rerank_evidence": true
+    }
+  },
+  "arm": "vanilla",
+  "dataset": "temporal-amazon-books-val2",
+  "data_dir": "data/processed/temporal-amazon-books-val2",
+  "cohort": "data/cohorts/temporal-amazon-books-val2_popmatched_t0_v300.json",
+  "domain_rules": "instructrec-books",
+  "use_instruction": false,
+  "provider": {
+    "name": "gemini",
+    "model": "gemini-3.5-flash-lite"
+  }
+}

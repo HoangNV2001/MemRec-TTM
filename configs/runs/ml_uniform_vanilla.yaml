@@ -1,0 +1,2 @@
+inherit: ml_uniform_memrec.yaml
+arm: vanilla

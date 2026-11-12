@@ -1,0 +1,3 @@
+# LLM không memory: chỉ instruction + 10 item gần nhất + candidate
+inherit: books_memrec.yaml
+arm: vanilla

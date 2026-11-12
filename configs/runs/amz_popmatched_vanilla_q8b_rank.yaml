@@ -1,0 +1,4 @@
+# Qwen3-8B, đầu ra dạng danh sách xếp hạng (dạng dùng cho RL)
+inherit: amz_popmatched_vanilla_q8b.yaml
+memrec:
+  rerank_output: ranking

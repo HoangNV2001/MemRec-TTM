@@ -1,0 +1,5 @@
+# Ablation: chỉ C2 (đọc)
+inherit: ml_popmatched_ttm.yaml
+memrec:
+  ttm:
+    rerank_evidence: false

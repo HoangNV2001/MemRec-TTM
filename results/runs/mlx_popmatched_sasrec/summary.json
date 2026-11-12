@@ -1,0 +1,30 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.27714285714285714,
+   "NDCG@1": 0.27714285714285714,
+   "Hit@3": 0.5857142857142857,
+   "NDCG@3": 0.4544347995561276,
+   "Hit@5": 0.75,
+   "NDCG@5": 0.5221837483249494,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.6034585745453525,
+   "MRR": 0.4807454648526077
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "args": {
+  "config": "configs/runs/ext/mlx_memrec.yaml",
+  "prefix": "mlx_popmatched",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 5,
+  "patience": 3,
+  "batch": 256,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 0,
+  "device": "cpu"
+ }
+}

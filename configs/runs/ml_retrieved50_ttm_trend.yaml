@@ -1,0 +1,6 @@
+# E2: MemRec-TTM + bằng chứng xu hướng (độ phổ biến 90 ngày, kênh của giai đoạn 1)
+inherit: ml_retrieved50_ttm_evid_recent.yaml
+memrec:
+  ttm:
+    trend_evidence: true
+    trend_window: 90

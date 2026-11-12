@@ -1,0 +1,4 @@
+# E2 đầu-cuối: ứng viên = top-50 của giai đoạn truy xuất (RRF), item đúng không chèn vào; cùng warm-up với popmatched
+inherit: ml_popmatched_ttm_sem.yaml
+cohort: data/cohorts/temporal-ml32m_retrieved50_t300_v100.json
+eval_max_tokens: 8000

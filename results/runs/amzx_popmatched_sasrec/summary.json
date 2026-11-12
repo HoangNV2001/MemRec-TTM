@@ -1,0 +1,30 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.14285714285714285,
+   "NDCG@1": 0.14285714285714285,
+   "Hit@3": 0.3414285714285714,
+   "NDCG@3": 0.25373949245918626,
+   "Hit@5": 0.52,
+   "NDCG@5": 0.32726533133615215,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.48135957812895136,
+   "MRR": 0.32751927437641726
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "args": {
+  "config": "configs/runs/ext/amzx_memrec.yaml",
+  "prefix": "amzx_popmatched",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 3,
+  "patience": 3,
+  "batch": 256,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 0,
+  "device": "cpu"
+ }
+}

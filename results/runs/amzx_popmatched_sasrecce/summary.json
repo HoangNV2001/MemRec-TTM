@@ -1,0 +1,33 @@
+{
+ "metrics": {
+  "test": {
+   "n": 700,
+   "Hit@1": 0.15142857142857144,
+   "NDCG@1": 0.15142857142857144,
+   "Hit@3": 0.3514285714285714,
+   "NDCG@3": 0.26339929175510474,
+   "Hit@5": 0.53,
+   "NDCG@5": 0.33705034134875306,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.4879852988981359,
+   "MRR": 0.335922335600907
+  }
+ },
+ "best_val_ndcg5": -1.0,
+ "best_epoch": 4,
+ "args": {
+  "config": "configs/runs/ext/amzx_memrec.yaml",
+  "prefix": "amzx_popmatched",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 4,
+  "patience": 3,
+  "batch": 128,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 0,
+  "device": "cuda",
+  "loss": "ce",
+  "tag": "sasrecce"
+ }
+}

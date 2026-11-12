@@ -1,0 +1,11 @@
+# Qwen3-8B tự host (vLLM, GPU 1) thay cho Gemini; cùng cohort, cùng prompt
+inherit: ml_popmatched_ttm_nofacet.yaml
+provider:
+  name: local
+  model: Qwen3-8B
+  extra_body:
+    chat_template_kwargs:
+      enable_thinking: false
+cache_path: results/cache/qwen3-8b.sqlite
+workers: 32
+max_physical_calls: 5000

@@ -1,0 +1,6 @@
+# Val2 (300 user mới, tách khỏi test; dữ liệu riêng data/processed/temporal-amazon-books-val2): xác nhận "facet gây hại" độc lập với test
+inherit: amz_popmatched_ttm_evid_recent.yaml
+dataset: temporal-amazon-books-val2
+data_dir: data/processed/temporal-amazon-books-val2
+cohort: data/cohorts/temporal-amazon-books-val2_popmatched_t0_v300.json
+splits: [val]

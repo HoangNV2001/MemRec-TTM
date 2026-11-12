@@ -1,0 +1,3 @@
+# R5b: LLM_Rec = adapter LoRA "rgrpo_run2" (Rank-GRPO, dừng sớm là hành động tại hạng, run2; checkpoint chọn trên val); LM_Mem giữ Qwen3-8B gốc
+inherit: amz_popmatched_ttm_evid_recent_q8b_rank.yaml
+rerank_model: rgrpo_run2

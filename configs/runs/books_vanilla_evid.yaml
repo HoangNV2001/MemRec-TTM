@@ -1,0 +1,10 @@
+# Đối chứng InstructRec: Vanilla + C3 (đồ thị dựng trên chuỗi gần như theo thứ tự ASIN)
+inherit: books_vanilla.yaml
+memrec:
+  ttm:
+    enabled: true
+    mode: ppr
+    m: 6
+    restart: 0.15
+    read: false
+    rerank_evidence: true

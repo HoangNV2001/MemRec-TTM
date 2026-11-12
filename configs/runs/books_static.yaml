@@ -1,0 +1,4 @@
+# InstructRec Books, đại diện nhóm "bộ nhớ tĩnh" (kiểu iAgent): như books_isolated nhưng không warm-up, bộ nhớ không đổi
+inherit: books_isolated.yaml
+warmup:
+  enabled: false

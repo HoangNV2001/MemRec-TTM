@@ -1,0 +1,5 @@
+# InstructRec Books, đại diện nhóm "bộ nhớ động riêng lẻ" (kiểu AgentCF, i²Agent): neighbor chỉ là item của chính user,
+# Stage-W không lan truyền; có chỉ dẫn của user như MemRec gốc trên benchmark này
+inherit: books_memrec.yaml
+memrec:
+  isolated: true

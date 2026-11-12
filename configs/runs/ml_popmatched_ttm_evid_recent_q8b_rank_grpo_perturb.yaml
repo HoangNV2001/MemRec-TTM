@@ -1,0 +1,3 @@
+# R5, ablation bộ nhớ: như ml_popmatched_ttm_evid_recent_q8b_rank_perturb.yaml, LLM_Rec = adapter "grpo_run1"
+inherit: ml_popmatched_ttm_evid_recent_q8b_rank_grpo.yaml
+perturb: [item_mem, evidence]

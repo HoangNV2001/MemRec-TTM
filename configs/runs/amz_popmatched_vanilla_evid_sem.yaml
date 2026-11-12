@@ -1,0 +1,5 @@
+# E3 nguồn truy xuất: Vanilla + bằng chứng chuyển tiếp + ngữ nghĩa
+inherit: amz_popmatched_vanilla_evid.yaml
+memrec:
+  ttm:
+    semantic_evidence: true

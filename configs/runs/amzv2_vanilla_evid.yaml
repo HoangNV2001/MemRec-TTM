@@ -1,0 +1,6 @@
+# Val2 (300 user mới, tách khỏi test; dữ liệu riêng data/processed/temporal-amazon-books-val2) để chọn thiết kế hướng B
+inherit: amz_popmatched_vanilla_evid.yaml
+dataset: temporal-amazon-books-val2
+data_dir: data/processed/temporal-amazon-books-val2
+cohort: data/cohorts/temporal-amazon-books-val2_popmatched_t0_v300.json
+splits: [val]

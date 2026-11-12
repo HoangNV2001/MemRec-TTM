@@ -1,0 +1,5 @@
+# Ablation: chỉ C3 (bằng chứng trong ReRank)
+inherit: amz_uniform_ttm.yaml
+memrec:
+  ttm:
+    read: false

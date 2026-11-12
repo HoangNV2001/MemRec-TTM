@@ -1,0 +1,6 @@
+# Val2 (300 user mới, tách khỏi test; dữ liệu riêng data/processed/temporal-ml32m-val2) để chọn thiết kế hướng B
+inherit: ml_popmatched_ttm_nofacet.yaml
+dataset: temporal-ml32m-val2
+data_dir: data/processed/temporal-ml32m-val2
+cohort: data/cohorts/temporal-ml32m-val2_popmatched_t0_v300.json
+splits: [val]

@@ -1,0 +1,5 @@
+# Ablation: C0 + C3 (bằng chứng trong ReRank, Stage-R như MemRec gốc)
+inherit: amz_popmatched_ttm_evid.yaml
+memrec:
+  ttm:
+    recent_k: 10

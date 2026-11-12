@@ -1,0 +1,3 @@
+# R5b, ablation bộ nhớ: bộ nhớ item và bằng chứng hoán vị giữa các ứng viên, LLM_Rec = adapter "rgrpo_run2"
+inherit: amz_popmatched_ttm_evid_recent_q8b_rank_rgrpo2.yaml
+perturb: [item_mem, evidence]

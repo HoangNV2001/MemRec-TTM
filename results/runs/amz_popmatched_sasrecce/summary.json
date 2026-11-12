@@ -1,0 +1,45 @@
+{
+ "metrics": {
+  "test": {
+   "n": 300,
+   "Hit@1": 0.11,
+   "NDCG@1": 0.11,
+   "Hit@3": 0.3333333333333333,
+   "NDCG@3": 0.23475964202381244,
+   "Hit@5": 0.53,
+   "NDCG@5": 0.3159534650444716,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.4652441699400077,
+   "MRR": 0.30634656084656087
+  },
+  "val": {
+   "n": 100,
+   "Hit@1": 0.18,
+   "NDCG@1": 0.18,
+   "Hit@3": 0.36,
+   "NDCG@3": 0.28047438028571664,
+   "Hit@5": 0.55,
+   "NDCG@5": 0.3605499762861072,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.504597507901174,
+   "MRR": 0.3573650793650794
+  }
+ },
+ "best_val_ndcg5": 0.3605499762861072,
+ "best_epoch": 4,
+ "args": {
+  "config": "configs/runs/amz_popmatched_memrec.yaml",
+  "prefix": "amz_popmatched",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 50,
+  "patience": 3,
+  "batch": 128,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 0,
+  "device": "cuda",
+  "loss": "ce",
+  "tag": "sasrecce"
+ }
+}

@@ -1,0 +1,6 @@
+# Hướng B1: MemRec-TTM + facet hai tầm thời gian (Stage-R đọc dòng thời gian của user; facet current/stable)
+inherit: amz_popmatched_ttm_evid_recent.yaml
+memrec:
+  ttm:
+    temporal_facets: true
+    timeline_k: 10

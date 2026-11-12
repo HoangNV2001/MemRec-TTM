@@ -1,0 +1,41 @@
+{
+ "metrics": {
+  "test": {
+   "n": 0,
+   "Hit@1": NaN,
+   "NDCG@1": NaN,
+   "Hit@3": NaN,
+   "NDCG@3": NaN,
+   "Hit@5": NaN,
+   "NDCG@5": NaN,
+   "Hit@10": NaN,
+   "NDCG@10": NaN,
+   "MRR": NaN
+  },
+  "val": {
+   "n": 300,
+   "Hit@1": 0.36666666666666664,
+   "NDCG@1": 0.36666666666666664,
+   "Hit@3": 0.6366666666666667,
+   "NDCG@3": 0.5256704548214338,
+   "Hit@5": 0.7933333333333333,
+   "NDCG@5": 0.589052898841306,
+   "Hit@10": 1.0,
+   "NDCG@10": 0.6554624732924682,
+   "MRR": 0.5488703703703705
+  }
+ },
+ "best_val_ndcg5": 0.589052898841306,
+ "args": {
+  "config": "configs/runs/mlv2_vanilla_evid.yaml",
+  "prefix": "mlv2_full",
+  "dim": 64,
+  "max_len": 50,
+  "epochs": 30,
+  "patience": 3,
+  "batch": 256,
+  "lr": 0.001,
+  "seed": 42,
+  "dump_topk": 500
+ }
+}

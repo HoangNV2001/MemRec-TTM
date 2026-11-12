@@ -1,0 +1,12 @@
+# Đối chứng InstructRec: MemRec-TTM (C0 + C3), tín hiệu thời gian yếu vì chuỗi gần như theo thứ tự ASIN
+inherit: books_memrec.yaml
+arm: ttm
+memrec:
+  ttm:
+    enabled: true
+    mode: ppr
+    m: 6
+    restart: 0.15
+    read: false
+    rerank_evidence: true
+    recent_k: 10

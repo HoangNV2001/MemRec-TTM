@@ -1,0 +1,44 @@
+{
+  "metrics": {
+    "test": {
+      "n": 700,
+      "Hit@1": 0.4042857142857143,
+      "NDCG@1": 0.4042857142857143,
+      "Hit@3": 0.71,
+      "NDCG@3": 0.5822065528265362,
+      "Hit@5": 0.8642857142857143,
+      "NDCG@5": 0.6458991574479891,
+      "Hit@10": 1.0,
+      "NDCG@10": 0.6898744974537416,
+      "MRR": 0.5917239229024943,
+      "malformed": 0,
+      "errors": 0
+    }
+  },
+  "warmup_writes_applied": 0,
+  "llm_stats_after_warmup": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "total_tokens": 0,
+    "total_requests": 0,
+    "physical_calls": 0,
+    "cache_hits": 0,
+    "logical_input_tokens": 0,
+    "logical_output_tokens": 0,
+    "avg_input_tokens": 0,
+    "avg_output_tokens": 0
+  },
+  "llm_stats_total": {
+    "total_input_tokens": 1137604,
+    "total_output_tokens": 470166,
+    "total_tokens": 1607770,
+    "total_requests": 700,
+    "physical_calls": 700,
+    "cache_hits": 0,
+    "logical_input_tokens": 1137604,
+    "logical_output_tokens": 470166,
+    "avg_input_tokens": 1625.1485714285714,
+    "avg_output_tokens": 671.6657142857143
+  },
+  "wall_seconds": 131.3
+}

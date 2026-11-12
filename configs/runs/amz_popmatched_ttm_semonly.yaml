@@ -1,0 +1,6 @@
+# E3 nguồn truy xuất: MemRec + C0 + bằng chứng ngữ nghĩa (thay cho chuyển tiếp)
+inherit: amz_popmatched_ttm_evid_recent.yaml
+memrec:
+  ttm:
+    rerank_evidence: false
+    semantic_evidence: true

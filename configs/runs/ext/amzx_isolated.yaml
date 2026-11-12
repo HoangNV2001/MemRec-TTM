@@ -1,0 +1,4 @@
+# 700 user test mở rộng, cấu hình như ../amz_popmatched_isolated.yaml
+inherit: amzx_memrec.yaml
+memrec:
+  isolated: true

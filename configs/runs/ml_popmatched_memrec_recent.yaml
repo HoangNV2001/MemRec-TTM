@@ -1,0 +1,7 @@
+# Ablation: MemRec gốc + chỉ C0 (không graph chuyển tiếp)
+inherit: ml_popmatched_memrec.yaml
+arm: memrec_recent
+memrec:
+  ttm:
+    enabled: false
+    recent_k: 10

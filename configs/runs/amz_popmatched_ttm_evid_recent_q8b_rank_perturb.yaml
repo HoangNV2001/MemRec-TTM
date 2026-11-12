@@ -1,0 +1,4 @@
+# R5, ablation bộ nhớ: bộ nhớ item và bằng chứng chuyển tiếp bị hoán vị giữa các ứng viên (chỉ ở lượt đánh giá),
+# LLM_Rec = Qwen3-8B gốc
+inherit: amz_popmatched_ttm_evid_recent_q8b_rank.yaml
+perturb: [item_mem, evidence]

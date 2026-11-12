@@ -1,0 +1,10 @@
+# Đối chứng: Vanilla (lịch sử gần nhất, không memory MemRec) + C3 bằng chứng next-step
+inherit: ml_uniform_vanilla.yaml
+memrec:
+  ttm:
+    enabled: true
+    mode: ppr
+    m: 6
+    restart: 0.15
+    read: false
+    rerank_evidence: true
